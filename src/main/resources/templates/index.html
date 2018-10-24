@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Sénégal Santé Emergent</title>
+    <meta name="description" content="plateforme de gestion des prise en charge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content="Mbaye SENGHOR"/>
+    <link rel="icon" type="image/png" th:href="@{/images/favicon.png}"
+
+          href="../static/images/favicon.png"
+    />
+    <!--Google Font link-->
+
+    <link rel="stylesheet" th:href="@{/css/fonts/all.css}" href="../static/css/fonts/all.css"/>
+    <link rel="stylesheet" th:href="@{/css/slick.css}" href="../static/css/slick.css"/>
+    <link rel="stylesheet" th:href="@{/css/slick-theme.css}" href="../static/css/slick-theme.css"/>
+    <link rel="stylesheet" th:href="@{/css/animate.css}" href="../static/css/animate.css"/>
+    <link rel="stylesheet" th:href="@{/css/iconfont.css}" href="../static/css/iconfont.css"/>
+    <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}" href="../static/css/font-awesome.min.css"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}" href="../static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" th:href="@{/css/magnific-popup.css}"  href="../static/css/magnific-popup.css" />
+    <link rel="stylesheet" th:href="@{/css/bootsnav.css}" href="../static/css/bootsnav.css"/>
+    <!--For Plugins external css-->
+    <link rel="stylesheet" th:href="@{/css/plugins.css}" href="../static/css/plugins.css"/>
+    <!--Theme custom css -->
+    <link rel="stylesheet" th:href="@{/css/style.css}" href="../static/css/style.css"/>
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" th:href="@{/css/responsive.css}" href="../static/css/responsive.css"/>
+    <script th:src="@{/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js}" src="../static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <meta name="keywords" content="senegal sante emergent assurance maladie ipm sécurite social plateforme prise en charge medicale  securite ctic medecin patient soins numerisation"/> </head>
+
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="100">
+
+<div class="culmn">
+    <!--Home page style-->
+    <nav class="navbar navbar-default bootsnav navbar-fixed no-background white">
+        <!-- Start Top Search -->
+        <div class="top-search">
+            <div class="container">
+                <div class="input-group">
+            <span class="input-group-addon">
+              <i class="fa fa-search"></i>
+            </span>
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-addon close-search">
+              <i class="fa fa-times"></i>
+            </span>
+                </div>
+            </div>
+        </div>
+        <!-- End Top Search -->
+        <div class="container">
+            <div class="attr-nav">
+                <ul>
+                    <li class="search">
+                        <a th:href="@{#}">
+                            <i class="fa fa-search text-muted"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Start Header Navigation -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" >
+                    <img th:src="@{/images/logo.png}" class="logo" alt="brand">
+                    <!--<img src="assets/images/footer-logo.png" class="logo logo-scrolled" alt="">-->
+                </a>
+            </div>
+            <!-- End Header Navigation -->
+            <!-- navbar menu -->
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a th:href="@{#home}">Accueil</a>
+                    </li>
+                    <li>
+                        <a th:href="@{#features}">A Propos</a>
+                    </li>
+                    <li>
+                        <a th:href="@{#service}">Services</a>
+                    </li>
+                    <li>
+                        <a th:href="@{#teams}">Team</a>
+                    </li>
+                    <li>
+                        <a th:href="@{#partenaire}">Partenaires</a>
+                    </li>
+                    <li>
+                        <a th:href="@{#contact}">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+    <!--Home Sections-->
+    <section id="home" class="home bg-black fix">
+        <div class="overlay" style="background-image: url('/images/1.jpg'); height: 100%; background-position: center; background-repeat: no-repeat;  background-size: cover;"></div>
+        <div class="container">
+            <div class="row">
+                <div class="main_home text-center">
+                    <div class="col-md-12">
+                        <div class="hello">
+                            <div class="slid_item">
+                                <div class="home_text ">
+                                    <h2 class="text-mega text-uppercase" style="font-family: 'Quantico', sans-serif;">SENEGAL SANTE EMERGENT&nbsp;
+                                        <br> </h2>
+                                </div>
+                                <div class="home_text ">
+                                    <h2 class="text-mega text-uppercase" style="font-family: 'Quantico', sans-serif;">AVEC SSE, Tu n'est jamais seul&nbsp;
+                                        <br> </h2>
+                                </div>
+                            </div>
+                            <!-- End off slid item -->
+                        </div>
+                    </div>
+                </div>
+                <a class="mouse-scroll" href="#about">
+            <span class="mouse">
+              <span class="mouse-movement"></span>
+            </span>
+                    <span class="mouse-message fadeIn">Explorer</span>
+                    <br>
+                    <!--<i class="fa fa-angle-down m-top-10 fadeIn mouse-message"></i>-->
+                </a>
+            </div>
+            <!--End off row-->
+        </div>
+        <!--End off container -->
+    </section>
+    <!--End off Home Sections-->
+    <!--About Section-->
+    <section id="about" class="about bg-yellow roomy-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="main_about text-center">
+                        <h1 class="text-mega">Sénégal Santé Emergent</h1>
+                        <h3 class="text-white">
+                            <span style="color:green;">-</span>
+                            <span style="color:yellow;">-</span>
+                            <span style="color:red;">-</span>
+                        </h3>
+                        <h3 class="text-black text-uppercase">La solution pour une meilleure prise en charge médicale</h3>
+                        <a class="btn btn-primary" th:href="@{/authentification/assurance}">Espace Assurance</a>
+                        <a class="btn btn-primary" th:href="@{/authentification/medecin}">Je suis médecin</a>
+                        <a class="btn btn-primary" th:href="@{/authentification/patient}">Je suis un patient</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Featured Section-->
+    <section id="features" class="features bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="main_features fix roomy-70">
+                    <div class="col-md-5">
+                        <div class="features_item">
+                            <div class="head_title">
+                                <h2 class="text-uppercase">a&nbsp;
+                                    <b>Propos</b>
+                                </h2>
+                            </div>
+                            <div class="featured_content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit donec fringilla iaculis facilisis morbi nulla lectus, luctus interdum eu ultricies ac tortor maecenas nec massa sit amet erat condimentum porttitor ac quis turpis.</p>
+                                <a href=""
+                                   class="btn btn-default m-top-40">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-md-offset-1 sm-m-top-50">
+                        <div class="features_item2_area">
+                            <div class="features_item2 text-center">
+                                <div class="divider_horizontal"></div>
+                                <div class="divider_vertical"></div>
+                                <div class="col-xs-6">
+                                    <div class="features_item_text">
+                                        <img th:src="@{images/featured1.jpg}" alt="" class="img-circle">
+                                        <p class="m-top-20">Trending Design</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="features_item_text">
+                                        <img th:src="@{images/featured2.jpg}" alt="" class="img-circle">
+                                        <p class="m-top-20">Easy to Customize</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="features_item_text m-top-50">
+                                        <img th:src="@{images/featured3.jpg}" alt="" class="img-circle">
+                                        <p class="m-top-20">Responsive Design</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="features_item_text m-top-50">
+                                        <img th:src="@{images/featured4.jpg}" alt="" class="img-circle">
+                                        <p class="m-top-20">Free Google Font</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End off row -->
+        </div>
+        <!-- End off container -->
+    </section>
+    <!-- End off Featured Section-->
+    <!--Business Section-->
+    <section id="service" class="service bg-grey roomy-70">
+        <div class="container">
+            <div class="row">
+                <div class="main_service">
+                    <div class="col-md-6">
+                        <div class="service_slid">
+                            <div class="slid_shap bg-yellow"></div>
+                            <div class="service_slid_item text-center">
+                                <div class="service_slid_text">
+                                    <span class="icon icon icon-tools text-black"></span>
+                                    <h5 class="text-black m-top-20">UI/UX Design</h5>
+                                </div>
+                                <div class="service_slid_text">
+                                    <span class="icon icon icon-sports-2 text-black"></span>
+                                    <h5 class="text-black m-top-20">UI/UX Design</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-md-offset-1">
+                        <div class="service_item sm-m-top-50">
+                            <div class="head_title">
+                                <h2 class="text-uppercase">Nos&nbsp;
+                                    <strong>Services</strong>
+                                </h2>
+                            </div>
+                            <div class="service_content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit donec fringilla iaculis facilisis morbi nulla lectus, luctus interdum eu ultricies ac tortor maecenas nec massa sit amet erat condimentum porttitor ac quis turpis.</p>
+                                <a href=""
+                                   class="btn btn-default m-top-40">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End off Business section -->
+    <!--Team And Skill Section-->
+    <section id="teams" class="teams roomy-80">
+        <div class="container">
+            <div class="row">
+                <div class="main_teams_content fix">
+                    <div class="col-md-6">
+                        <div class="teams_item">
+                            <div class="head_title">
+                                <h2 class="text-uppercase">notre&nbsp;
+                                    <b>équipe</b>
+                                </h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit donec fringilla iaculis facilisis morbi nulla lectus, luctus interdum eu ultricies tortor maecenas nec massa sit amet erat condimentum porttitorac quis turpis nulla lectus sit amet
+                                consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="teams_item text-center sm-m-top-50">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img th:src="@{images/team1.jpg}" alt="" class="img-circle">
+                                    <h4 class="m-top-20">Mbaye
+                                        <strong>Senghor</strong>
+                                    </h4>
+                                    <h5>CEO</h5>
+                                    <div class="separator"></div>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <a href="">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa fa-link"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End off col-md-4 -->
+                                <div class="col-sm-4">
+                                    <img th:src="@{images/team2.jpg}" alt="" class="img-circle">
+                                    <h4 class="m-top-20">Mama O.
+                                        <strong>Diallo</strong>
+                                    </h4>
+                                    <h5>Administrateur Réseau</h5>
+                                    <div class="separator"></div>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <a href="">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa fa-link"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End off col-md-4 -->
+                                <div class="col-sm-4">
+                                    <img th:src="@{images/team3.jpg}" alt="" class="img-circle">
+                                    <h4 class="m-top-20">Mouhamadou B.
+                                        <strong>Bah</strong>
+                                    </h4>
+                                    <h5>développeur Web</h5>
+                                    <div class="separator"></div>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <a href="">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fa fa-link"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End off col-md-4 -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End off col-md-6 -->
+                </div>
+                <!-- End off main Team -->
+                <div class="col-md-12">
+                    <div class="skill">
+                        <div class="team_content_details_skills m-top-50">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="teamskillbar clearfix m-top-50 text-uppercase" data-percent="80%">
+                                        <label>Jeune</label>
+                                        <div class="teamskillbar-bar" style="width: 80%;"></div>
+                                    </div>
+                                    <!-- End Skill Bar -->
+                                    <div class="teamskillbar clearfix m-top-50 text-uppercase" data-percent="75%">
+                                        <label>dynamique</label>
+                                        <div class="teamskillbar-bar" style="width: 75%;"></div>
+                                    </div>
+                                    <!-- End Skill Bar -->
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="teamskillbar clearfix m-top-50 text-uppercase" data-percent="90%">
+                                        <label>Créative</label>
+                                        <div class="teamskillbar-bar" style="width: 90%;"></div>
+                                    </div>
+                                    <!-- End Skill Bar -->
+                                    <div class="teamskillbar clearfix m-top-50 text-uppercase" data-percent="98%">
+                                        <label>bien encadrée</label>
+                                        <div class="teamskillbar-bar" style="width: 98%;"></div>
+                                    </div>
+                                    <!-- End Skill Bar -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End off skill -->
+                </div>
+                <!-- End col-md-12 -->
+            </div>
+            <!-- End off row -->
+        </div>
+        <!-- End off container -->
+    </section>
+    <!-- End off Team & Skill section -->
+    <!--Choose section-->
+    <section id="partenaire" class="choose bg-grey roomy-80">
+        <div class="container">
+            <div class="row">
+                <div class="main_choose">
+                    <div class="col-md-6">
+                        <div class="service_slid">
+                            <div class="slid_shap bg-yellow"></div>
+                            <div class="service_slid_item text-center">
+                                <div class="service_slid_text">
+                                    <img th:src="@{images/ctic.png}" >
+                                    <h5 class="text-black m-top-20">CTIC Dakar</h5>
+                                </div>
+                                <div class="service_slid_text">
+                                    <img th:src="@{images/buntutekki.png}" >
+                                    <h5 class="text-black m-top-20">BuntuTeki</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End off col-md-6 -->
+                    <div class="col-md-5 col-md-offset-1">
+                        <div class="choose_content sm-m-top-40">
+                            <div class="head_title">
+                                <h2 class="text-uppercase">Nos
+                                    <b>partenaires</b>
+                                </h2>
+                            </div>
+                            <div class="choose_item_text fix">
+                                <h6>
+                                    <i class="fa fa-check-square-o"></i>CTIC Dakar</h6>
+                                <p>Premier incubateur de l'Afrique de l'Ouest</p>
+                            </div>
+                            <div class="choose_item_text fix m-top-20">
+                                <h6>
+                                    <i class="fa fa-check-square-o"></i>Buntu Tekki</h6>
+                                <p>Atque ducimus velit, earum quidem, iusto dolorem. </p>
+                            </div>
+                            <div class="choose_item_text fix m-top-20">
+                                <h6>
+                                    <i class="fa fa-check-square-o"></i>Ministère de la Santé</h6>
+                                <p>Atque ducimus velit, earum quidem, iusto dolorem. </p>
+                            </div>
+                            <div class="choose_item_text fix m-top-20">
+                                <h6>
+                                    <i class="fa fa-check-square-o"></i>Ordre Narionale des Médecins</h6>
+                                <p>Atque ducimus velit, earum quidem, iusto dolorem. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End off col-md-6 -->
+                </div>
+            </div>
+            <!-- End off row -->
+        </div>
+        <!-- End off container -->
+    </section>
+    <!-- End off choose section -->
+    <!--Portfolio Section-->
+    <!-- End off portfolio section -->
+    <!--Test section-->
+    <!-- End off test section -->
+    <footer id="contact" class="footer action-lage bg-black p-top-80">
+        <!--<div class="action-lage"></div>-->
+        <div class="container">
+            <div class="row">
+                <div class="widget_area">
+                    <div class="col-md-4">
+                        <div class="widget_item widget_about">
+                            <h5 class="text-white">Contact</h5>
+                            <div class="widget_ab_item m-top-30">
+                                <div class="item_icon">
+                                    <i class="fa fa-location-arrow"></i>
+                                </div>
+                                <div class="widget_ab_item_text">
+                                    <h6 class="text-white">Adresse</h6>
+                                    <p> 3 rue, Béranger Féraud <br>(Dakar-SENEGAL)</p>
+                                </div>
+                            </div>
+                            <div class="widget_ab_item m-top-30">
+                                <div class="item_icon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class="widget_ab_item_text">
+                                    <h6 class="text-white">Phone :</h6>
+                                    <p>+221 78 187 16 15</p>
+                                </div>
+                            </div>
+                            <div class="widget_ab_item m-top-30">
+                                <div class="item_icon">
+                                    <i class="fa fa-envelope-o"></i>
+                                </div>
+                                <div class="widget_ab_item_text">
+                                    <h6 class="text-white">Email Address :</h6>
+                                    <p>aliensenegal@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End off widget item -->
+                    </div>
+                    <!-- End off col-md-3 -->
+                    <!-- End off col-md-3 -->
+                    <div class="col-md-4">
+                        <div class="widget_item widget_service sm-m-top-50">
+                            <h5 class="text-white">Mentions Légales&nbsp;</h5>
+                            <ul class="m-top-20">
+                                <li class="m-top-20">
+                                    <a href="#">
+                                        <i class="fa fa-angle-right"></i>Condition d'utilisation</a></li>
+                                <li class="m-top-20">
+                                    <a href="#">
+                                        <i class="fa fa-angle-right"></i>Politique de confidentialité</a></li>
+                                <li class="m-top-20">
+                                    <a href="#">
+                                        <i class="fa fa-angle-right"></i>Utilisation des cookies
+                                    </a> </li>
+                            </ul>
+                        </div>
+                        <!-- End off widget item -->
+                    </div>
+                    <!-- End off col-md-3 -->
+                    <div class="col-md-4">
+                        <div class="widget_item widget_newsletter sm-m-top-50">
+                            <h5 class="text-white">Newsletter</h5>
+                            <form class="form-inline m-top-30">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Votre adresse e-mail">
+                                    <button type="submit" class="btn text-center">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="widget_brand m-top-40">
+                                <a href="" class="text-uppercase">Alien team</a>
+                            </div>
+                            <ul class="list-inline m-top-20">
+                                <li>-
+                                    <a href="">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa fa-link"></i>
+                                    </a> - </li>
+                            </ul>
+                        </div>
+                        <!-- End off widget item -->
+                    </div>
+                    <!-- End off col-md-3 -->
+                </div>
+            </div>
+        </div>
+        <div class="main_footer fix bg-mega text-center p-top-40 p-bottom-30 m-top-80">
+            <div class="col-md-12">
+                <p class="wow fadeInRight" data-wow-duration="1s">© Copyright 2018&nbsp;
+                    <a target="blank" th:href="@{#}" class="text-mega">Alien Team</a>&nbsp;- All Rights Reserved </p>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- JS includes -->
+<script th:src="@{/js/vendor/jquery-1.11.2.min.js}" src="../static/js/vendor/jquery-1.11.2.min.js"></script>
+<script th:src="@{/js/vendor/bootstrap.min.js}" src="../static/js/vendor/bootstrap.min.js"></script>
+<script th:src="@{/js/jquery.magnific-popup.js}" src="../static/js/jquery.magnific-popup.js"></script>
+<!--<script src="js/jquery.easypiechart.min.js"></script>-->
+<script th:src="@{/js/jquery.easing.1.3.js}" src="../static/js/jquery.easing.1.3.js"></script>
+<!--<script src="js/slick.js"></script>-->
+<script th:src="@{/js/slick.min.js}" src="../static/js/slick.min.js"></script>
+<script th:src="@{/js/js.isotope.js}" src="../static/js/js.isotope.js"></script>
+<script th:src="@{/js/jquery.collapse.js}" src="../static/js/jquery.collapse.js"></script>
+<script th:src="@{/js/bootsnav.js}" src="../static/js/bootsnav.js"></script>
+
+<!------>
+
+<script th:src="@{https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js}"></script>
+
+<!------->
+
+<script th:src="@{/js/plugins.js}" src="../static/js/plugins.js"></script>
+<script th:src="@{/js/main.js}" src="../static/js/main.js"></script>
+</body>
+
+</html>
